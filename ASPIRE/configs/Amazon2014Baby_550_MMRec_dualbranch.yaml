@@ -1,0 +1,31 @@
+dataset: Amazon2014Baby_550_MMRec
+root: ../../data
+
+embedding_dim: 64
+num_layers: 3
+
+epochs: 500
+batch_size: 2048
+optimizer: adam
+lr: 1.e-4
+weight_decay: 0.0
+
+monitors: [LOSS, Recall@1, Recall@10, Recall@20, NDCG@10, NDCG@20]
+which4best: NDCG@20 
+
+vfile: visual_modality.pkl
+tfile: textual_modality.pkl
+freedom_mod_k: 10
+
+val_data_ratio: 0.5
+temperature: 0.75
+prefilter_norm: 1
+filter_init: full_spec
+
+graph_loss_weight: 1.0
+graph_optimizer: sgd
+graph_lr: 1.e-2
+graph_momentum: 0.1
+graph_weight_decay: 0.0
+graph_warmup: 0
+graph_interval: 5

@@ -1,0 +1,27 @@
+
+command: python main.py
+
+envs:
+  root: ../../data
+  dataset: Amazon2014Baby_550_MMRec
+  #dataset: Amazon2014Electronics_550_MMRec
+  #dataset: Ciao_330_MMRec
+  #dataset: LastFM_330_MMRec
+  device: '0'
+
+params:
+  seed: [0, 1, 2, 3, 4]
+
+defaults:
+  config: configs/Amazon2014Baby_550_MMRec.yaml
+  #config: configs/Amazon2014Electronics_550_MMRec.yaml
+  #config: configs/Ciao_330_MMRec.yaml
+  #config: configs/LastFM_330_MMRec.yaml
+  #config: configs/Amazon2014Baby_550_MMRec_heterogeneous.yaml
+  #config: configs/Amazon2014Electronics_550_MMRec_heterogeneous.yaml
+  #config: configs/Ciao_330_MMRec_heterogeneous.yaml
+  #config: configs/LastFM_330_MMRec_heterogeneous.yaml
+  #config: configs/Amazon2014Baby_550_MMRec_dualbranch.yaml
+  #config: configs/Amazon2014Electronics_550_MMRec_dualbranch.yaml
+  #config: configs/Ciao_330_MMRec_dualbranch.yaml
+  #config: configs/LastFM_330_MMRec_dualbranch.yaml
